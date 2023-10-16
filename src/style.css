@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    /* ================= utils ==================== */
+    .f-poppins{
+        font-family: 'Poppins', sans-serif !important;
+    }
+
+    .hover{
+        transition: all 0.2s ease-out ;
+    }
+
+    .hover:hover{
+        transform: translateY(-3px) !important;
+    }
+
+    #card-wrapper{
+        perspective: 600px;
+    }
+
+    #card{
+        transition: transform 0.2s ease-out,scale 0.2s ease-in 0.1s ,box-shadow 0.2s ease-out 0.05s;
+    }
+
+    #card:hover{
+        transform: translateY(-6px);
+        scale: 1.02;
+        box-shadow: 1px 5px 10px rgba(0,0,0,0.1) !important;
+    }
+
+    /* ====================================================== */
+     
+    .router-link-active,.router-link-active > span{
+        color : #ffffff !important;
+    }
+
+    .cart{
+        height: calc(100vh - 50px) !important;
+    }
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
